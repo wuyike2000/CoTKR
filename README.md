@@ -1,5 +1,12 @@
 # CoTKR: Chain-of-Thought Enhanced Knowledge Rewriting for Complex Question Answering
 
+> **Abstract**
+Recent studies have explored the use of Large Language Models (LLMs) with Retrieval Augmented Generation (RAG) for Knowledge Graph Question Answering (KGQA). They typically require rewriting retrieved subgraphs into natural language formats comprehensible to LLMs. However, when tackling complex questions, the knowledge rewritten by existing methods may include irrelevant information, omit crucial details, or fail to align with the question's semantics. To address them, we propose a novel rewriting method CoTKR, **C**hain-of-**T**hought **E**nhanced **K**nowledge **R**ewriting, for generating reasoning traces and corresponding knowledge in an interleaved manner, thereby mitigating the limitations of single-step knowledge rewriting. Additionally, to bridge the preference gap between the knowledge rewriter and the question answering (QA) model, we propose a training strategy PAQAF, **P**reference **A**lignment from **Q**uestion **A**nswering **F**eedback, for leveraging feedback from the QA model to further optimize the knowledge rewriter. We conduct experiments using various LLMs across several KGQA benchmarks. Experimental results demonstrate that, compared with previous knowledge rewriting methods, CoTKR generates the most beneficial knowledge representation for QA models, which significantly improves the performance of LLMs in KGQA.
+> 
+![](./figs/1.png)
+This is the accompanying code for the paper **CoTKR: Chain-of-Thought Enhanced Knowledge Rewriting for Complex Question Answering**.  
+The paper has been accepted by the The 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP 2024).
+
 ## Setup
 ### Environment Setup
 ```
