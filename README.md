@@ -69,7 +69,7 @@ CoTKR-data/
         └── CoT/:
             ├── llama-2-7b-chat-hf/: CoTKR Preference Allignment Training Corpus for llama-2-7b-chat-hf
             └── Meta-Llama-3-8B-Instruct/: CoTKR Preference Allignment Training Corpus for Meta-Llama-3-8B-Instruct
-    ├── PA-Mistral/: Preference Allignment Training Corpus for Mistral
+    └── PA-Mistral/: Preference Allignment Training Corpus for Mistral
         └── CoT/:
             ├── llama-2-7b-chat-hf/: CoTKR Preference Allignment Training Corpus for llama-2-7b-chat-hf
             └── Meta-Llama-3-8B-Instruct/: CoTKR Preference Allignment Training Corpus for Meta-Llama-3-8B-Instruct 
