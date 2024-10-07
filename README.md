@@ -57,6 +57,45 @@ Go to ```CoTKR/inference/open/retrieve/bm25/```. Run ```build_index_sparse.sh```
 Go to ```CoTKR/inference/open/retrieve/2hop/```. Run ```2hop.py``` to get 2-hop subgraph for each question. Run ```format.py``` to retain top 30 triples for inference. You need to modify the SPARQL endpoint.
 
 ## Corpus Generation
+**We provide our constructed corpus in [CoTKR-data.zip](https://mega.nz/file/0cA2TZwQ#2oBVW0wILPdZf9IxbQCIlMMjZE3fpi0dqinqAhRuwtc). You can download it directly and escape the following corpus construction steps.**
+```
+CoTKR-data/
+├── grailqa/
+    ├── finetune/
+        ├── CoT/: CoTKR finetune dataset
+        ├── kg-to-text/: kg-to-text finetune dataset
+        └── summary/: summary finetune dataset
+    ├── PA-chatgpt/: Preference Allignment Training Corpus for ChatGPT
+        └── CoT/:
+            ├── llama-2-7b-chat-hf/: CoTKR Preference Allignment Training Corpus for llama-2-7b-chat-hf
+            └── Meta-Llama-3-8B-Instruct/: CoTKR Preference Allignment Training Corpus for Meta-Llama-3-8B-Instruct
+    ├── PA-Mistral/: Preference Allignment Training Corpus for Mistral
+        └── CoT/:
+            ├── llama-2-7b-chat-hf/: CoTKR Preference Allignment Training Corpus for llama-2-7b-chat-hf
+            └── Meta-Llama-3-8B-Instruct/: CoTKR Preference Allignment Training Corpus for Meta-Llama-3-8B-Instruct 
+└── grailqa/
+    ├── finetune/
+        ├── CoT/: CoTKR finetune dataset
+        ├── kg-to-text/: kg-to-text finetune dataset
+        └── summary/: summary finetune dataset
+    ├── PA-chatgpt/: Preference Allignment Training Corpus for ChatGPT
+        └── CoT/:
+            ├── llama-2-7b-chat-hf/: CoTKR Preference Allignment Training Corpus for llama-2-7b-chat-hf
+            └── Meta-Llama-3-8B-Instruct/: CoTKR Preference Allignment Training Corpus for Meta-Llama-3-8B-Instruct
+    ├── PA-chatgpt-ablation/: Preference Allignment Training Corpus for ChatGPT in Ablation Study
+        └── CoT/:
+            ├── llama-2-7b-chat-hf/: CoTKR Preference Allignment Training Corpus for llama-2-7b-chat-hf
+            └── Meta-Llama-3-8B-Instruct/: CoTKR Preference Allignment Training Corpus for Meta-Llama-3-8B-Instruct
+    ├── PA-Mistral/: Preference Allignment Training Corpus for Mistral
+        └── CoT/:
+            ├── llama-2-7b-chat-hf/: CoTKR Preference Allignment Training Corpus for llama-2-7b-chat-hf
+            └── Meta-Llama-3-8B-Instruct/: CoTKR Preference Allignment Training Corpus for Meta-Llama-3-8B-Instruct
+    └── PA-chatgpt-ablation/: Preference Allignment Training Corpus for Mistral in Ablation Study
+        └── CoT/:
+            ├── llama-2-7b-chat-hf/: CoTKR Preference Allignment Training Corpus for llama-2-7b-chat-hf
+            └── Meta-Llama-3-8B-Instruct/: CoTKR Preference Allignment Training Corpus for Meta-Llama-3-8B-Instruct                                   
+```
+If you want to generate your corpus, please follow these steps and be ready to spend a lot of money ;)
 ### Supervised Fine-tuning Corpus Generation
 Go to ```CoTKR/corpus/```. Run ```kg-to-text.py``` to generate KG-to-Text corpus for supervised fine-tuning. Run ```summary.py``` to generate Summary corpus for supervised fine-tuning. Run ```cot.py``` to generate CoTKR corpus for supervised fine-tuning.
 ### Preference Alignment Corpus Generation
