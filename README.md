@@ -19,7 +19,7 @@ pip install -r requirement2.txt
 ```
 **Note: Due to the impact of different versions of PEFT on training and inference, we utilize two versions of environment. Please use the tune environment for model training, and the CoTKR environment in other cases.**
 ### Freebase Setup
-Please setup Freebase following the instructions in [Freebase-Setup](https://github.com/dki-lab/Freebase-Setup).
+Please setup Freebase following the instructions in [Freebase-Setup](https://github.com/dki-lab/Freebase-Setup). If any network issues occur during the download process, the file can alternatively be downloaded via [Baidu Netdisk](https://pan.baidu.com/s/1-UdzRWEwaoRbsjFCicVQsQ?pwd=hnag).
 ### LLM Setup
 We employ various LLMs as the backbone, including [Llama-2-7b-chat-hf](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf), [Meta-Llama-3-8B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct), [Mistral-7B-Instruct-v0.3](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3). Download LLMs to ```pretrain/```.
 ```
