@@ -126,3 +126,25 @@ Go to ```CoTKR/inference/closed/answer/```. Run ```answer.py``` for question-ans
 ### No Knowledge
 Go to ```CoTKR/inference/open/answer/```. Run ```answer_no.py``` for question-answering without contextual knowledge. You need to modify some key parameters, like DATA, ANS.
 
+## Contact
+Please consider creating a new issue. We will respond to your questions within a few days.
+
+## BibTex
+If you find this work is helpful for your research, please cite:
+```
+@inproceedings{DBLP:conf/emnlp/WuHHHQ0P24,
+  author       = {Yike Wu and
+                  Yi Huang and
+                  Nan Hu and
+                  Yuncheng Hua and
+                  Guilin Qi and
+                  Jiaoyan Chen and
+                  Jeff Z. Pan},
+  title        = {CoTKR: Chain-of-Thought Enhanced Knowledge Rewriting for Complex Knowledge
+                  Graph Question Answering},
+  booktitle    = {{EMNLP}},
+  pages        = {3501--3520},
+  publisher    = {Association for Computational Linguistics},
+  year         = {2024}
+}
+```
