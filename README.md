@@ -5,7 +5,7 @@ Recent studies have explored the use of Large Language Models (LLMs) with Retrie
 > 
 ![](./figs/1.png)
 This is the accompanying code for the paper [CoTKR: Chain-of-Thought Enhanced Knowledge Rewriting for Complex Question Answering](https://aclanthology.org/2024.emnlp-main.205/).    
-The paper has been accepted by the The 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP 2024).
+The paper has been accepted by **The 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP 2024)**.
 
 ## Setup
 ### Environment Setup
